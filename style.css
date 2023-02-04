@@ -32,7 +32,7 @@ ul{
   ::-webkit-scrollbar-thumb:hover {
     background: #1b1b1b; 
   }
-/*==hero========================*/
+/* hero */
 #hero{
     min-height: 600px;
     background-color: #f5f7fb;
@@ -91,7 +91,7 @@ ul{
     letter-spacing: 1px;
     font-size: 0.9rem;
 }
-/*==hero-content==================*/
+/* hero-content */
 .hero-content{
     max-width: 1200px;
     width: 90%;
@@ -160,7 +160,7 @@ ul{
     font-size: 0.5rem;
     padding-bottom: 1px;
 }
-/*==appointment-search=====================*/
+/* appointment-search */
 .appointment-search-container{
     max-width: 1000px;
     width: 90%;
@@ -212,7 +212,7 @@ ul{
     font-size: 1.1rem;
     cursor: pointer;
 }
-/*==what-we-provide===============*/
+/* what-we-provide */
 .what-we-provide{
     max-width: 1200px;
     width: 90%;
@@ -257,7 +257,7 @@ ul{
 .w-i-box3 .w-info-icon{
     background-color: #d4e7ff;
 }
-/*==our-story=======================*/
+/* our-story */
 #our_story{
     background-color: #f5f7fb;
     max-width: 1200px;
@@ -305,22 +305,22 @@ ul{
     align-items: center;
     margin-bottom: 10px;
 }
-.our-stroy-text{
+.our-story-text{
     padding: 50px;
 }
-.our-stroy-text h2{
+.our-story-text h2{
     font-size: 2.8rem;
     color: #122853;
     line-height: 3rem;
 }
-.our-stroy-text p{
+.our-story-text p{
     color: #535353;
     font-size: 0.9rem;
     margin: 10px 0px;
     line-height: 1.4rem;
     letter-spacing: 0.3px;
 }
-.our-stroy-text p a{
+.our-story-text p a{
     color: #122853;
     text-decoration: underline;
 }
@@ -360,7 +360,7 @@ ul{
 .s-n-box4{
     background-color: #d7d4ff;
 }
-/*==our-services=====================*/
+/* our-services */
 #our-services{
     width: 100%;
     margin: 50px auto 0px auto;
@@ -499,7 +499,7 @@ ul{
     text-decoration: underline;
     font-weight: 600;
 }
-/*==why-choose-us======================*/
+/* why-choose-us */
 #why-choose-us{
     width: 100%;
     display: grid;
@@ -614,7 +614,7 @@ ul{
     color: #ffffff;
     font-weight: 600;
 }
-/*==our-team====================*/
+/* our-team */
 #our-team{
     max-width: 1200px;
     width: 90%;
@@ -677,7 +677,70 @@ ul{
     font-size: 0.9rem;
     margin-top: 5px;
 }
-/*==Testimonials=============================*/
+
+/* Book Appointment */
+
+#appointment {
+    background-color: #d7d4ff;
+    padding: 60px 0;
+}
+
+#appointment .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#appointment .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #2c4964;
+}
+.appointment .bookForm {
+    width: 100%;
+}
+  
+.appointment .bookForm .form-group {
+    padding-bottom: 8px;
+}
+  
+  
+.appointment .bookForm input, .appointment .bookForm textarea, .appointment .bookForm select {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 10px !important;
+}
+  
+.appointment .bookForm input:focus, .appointment .bookForm textarea:focus, .appointment .bookForm select:focus {
+    border-color: #1977cc;
+}
+  
+.appointment .bookForm input, .appointment .bookForm select {
+    height: 44px;
+}
+  
+.appointment .bookForm textarea {
+    padding: 10px 12px;
+}
+  
+.appointment .bookForm button[type="submit"] {
+    background: #1977cc;
+    border: 0;
+    padding: 10px 35px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+  
+.appointment .bookForm button[type="submit"]:hover {
+    background: #3fbbc0;
+}
+  
+
+/* Testimonials */
 #testimonials{
     background-color: #f5f7fb;
     padding: 50px 0px;
@@ -783,7 +846,7 @@ ul{
 .swiper-pagination{
    position: static !important;
 }
-/*==subscribe=====================*/
+/* subscribe */
 #subscribe{
     max-width: 1000px;
     width: 90%;
@@ -834,7 +897,7 @@ ul{
     font-weight: 500;
     letter-spacing: 0.4px;
 }
-/*==footer================================*/
+/* footer */
 footer{
     width: 100%;
     background-color:  #f5f7fb;
@@ -916,7 +979,7 @@ footer{
     font-size: 0.9rem;
 }
 
-/*==making-responsive====================*/
+/* making-responsive */
 .menu-icon,
 .menu-btn{
     display: none;
