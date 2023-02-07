@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <nav class="navigation">
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+            <span class="nav-icon"></span>
+        </label>
+
+        <a href="index.html" class="logo"><span>My</span>Care.org</a>
+    </nav>
+    <div class="contact-form">
+        <div class="contact-form-header">
+            <h2>Contact us</h2>
+        </div>
+        <form class="form">
+            <div class="form-control">
+                <label for="username" name="username">Name</label>
+                <input id="txtUserName" type="text" placeholder="Enter name" name="username">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="email" name="email">Email</label>
+                <input id="txtEmail" type="email" placeholder="Enter email" name="email">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="phone" name="phone">Phone Number</label>
+                <input id="txtPhone" type="text" placeholder="Enter phone number" name="phone">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="subject" name="subject">Subject</label>
+                <input id="txtSubject" type="text" placeholder="Enter subject" name="subject">
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <textarea rows="4" name="comment" placeholder=" Enter your query here (if any)"></textarea>
+            </div>
+            <div class="form-control">
+                <button>Give me a Call</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        let userName = document.getElementById("txtUserName");
+        let email = document.getElementById("txtEmail");
+        let phone = document.getElementById("txtPhone");
+        let subject = document.getElementById("txtSubject");
+        let form = document.querySelector("form");
+        function validateInput(){
+            //check username is empty 
+            if(userName.value.trim()===""){
+                onError(userName,"User Name cannot be empty");
+            }else{
+                onSuccess(userName);
+            }
+            if(email.value.trim()===""){
+                onError(email,"Email cannot be empty");
+            }
+            else if(!isValidEmail(email.value.trim())){
+                onError(email,"Email is not valid");
+            }
+            else{
+                onSuccess(email);
+            }
+            
+            if(phone.value.trim()===""){
+                onError(phone,"Phone number cannot be empty");
+            }else{
+                onSuccess(phone);
+            }
+            if(subject.value.trim()===""){
+                onError(subject,"Subject cannot be empty");
+            }else{
+                onSuccess(subject);
+            } 
+            /*password
+            if(pwd.value.trim()===""){
+                onError(pwd,"User Name cannot be empty");
+            }else{
+                onSuccess(pwd);
+            }
+            if(conPwd.value.trim()===""){
+                onError(conPwd,"User Name cannot be empty");
+            }else{
+                if(pwd.value.trim()!==conPwd.value.trim()){
+                    onError(conPwd,"Password & Confirm password not matching");
+                }
+                else
+                onSuccess(conPwd);
+            }*/
+        }
+        document.querySelector("button").addEventListener("click",(event)=>{
+            event.preventDefault();
+            validateInput();
+        });
+        
+        function onSuccess(input){
+            let parent=input.parentElement;
+            let messageEle=parent.querySelector("small");
+            messageEle.style.visibility="hidden"; 
+            parent.classList.remove("error");
+            parent.classList.add("success");  
+        }
+        
+        function onError(input,message){
+            let parent=input.parentElement;
+            let messageEle=parent.querySelector("small");
+            messageEle.style.visibility="visible";
+            messageEle.innerText=message;  
+            parent.classList.add("error");
+            parent.classList.remove("success");
+        }
+        
+        function isValidEmail(email){
+            return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+        }
+
+    </script>
+    
+</body>
+</html>
