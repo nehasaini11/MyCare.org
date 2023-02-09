@@ -1078,6 +1078,40 @@ footer{
     border: 2px solid red;
 }
 
+
+/* doctors-list */
+.doctors-list h2 {
+    text-align: center;
+    color: #122853;
+}
+
+.doctors-list .sub-heading {
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #1977cc;
+}
+
+.doctors-list #cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.doctors-list h5 {
+    color: #0d6efd;
+}
+.doctors-list .card{
+    margin-bottom: 2rem;
+    transition: 0.3s;
+}
+.doctors-list .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.doctors-list .card img{
+    height: 250px;
+}
+
+
 /* making-responsive */
 .menu-icon,
 .menu-btn{

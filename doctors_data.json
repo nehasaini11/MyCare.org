@@ -1,0 +1,76 @@
+{
+    "doctors": [
+        {
+            "id":1,
+            "name": "Dr.Sudeep Singh Sachdeva",
+            "description": "Director and Senior Consultant",
+            "doctor_info": "MBBS, MD (Internal Medicine), DM (Nephrology)",
+            "speciality": "Nephrology",
+            "image":"d1.png"
+        },
+        {
+            "id":2,
+            "name": "Dr. Satish Kaul",
+            "description": "Visiting Consultant",
+            "doctor_info": "MBBS, MD (Paediatrics)",
+            "speciality": "Pediatric Gastroenterology & Hepatology",
+            "image":"d2.png"
+        },
+        {
+            "id":3,
+            "name": "Dr. Ashish Kumar",
+            "description": "Senior Consultant",
+            "doctor_info":"MBBS-MGM Medical College, Indore, MD(Medicine)- PMCH, Patna , DM (Cardiology)- SGPGIMS, Lucknow",
+            "speciality": "Cardiology, Heart Transplant",
+            "image":"d3.png"
+        },
+        {
+            "id":4,
+            "name": "Dr. Harshita Oberoi",
+            "description": "Visiting Consultant - Obstetrics & Gynaecology",
+            "doctor_info":"MS (OBG)",
+            "speciality": "Obstetrics & Gynaecology",
+            "image":"d4.png"
+        },
+        {
+            "id":5,
+            "name": "Dr. Amarya Sharma",
+            "description": "Consultant",
+            "doctor_info": "MBBS, MD (Dermatology)",
+            "speciality": "Dermatology and Cosmetology",
+            "image":"d5.png"
+        },
+        {
+            "id":6,
+            "name": "Dr.Pushanjali",
+            "description": "Visiting Consultant",
+            "doctor_info": "MBBS, Pt. JNM Medical College, Raipur MD (Radiolog",
+            "speciality": "Radiology",
+            "image":"d6.png"
+        },
+        {
+            "id":7,
+            "name": "Dr.Sudeep Singh Sachdeva",
+            "description": "Dietician",
+            "doctor_info": "BSC (Clinical Nutrition & Dietitics) , MSC (Food & Nutrition)",
+            "speciality": "Clinical Nutrition & Dietetics",
+            "image":"d7.jpg"
+        },
+        {
+            "id":8,
+            "name": "Dr. N.P Mishra",
+            "description": "Blood Bank Officer",
+            "doctor_info": "MBBS,DACCA,D.Ped",
+            "speciality": "Blood Bank",
+            "image":"d7.jpg"
+        },
+        {
+            "id":9,
+            "name": "Dr. Aoyon Sengupta",
+            "description": "Junior Consultant",
+            "doctor_info": "MBBS, PGFAEM (Christian Medical College, Vellore)",
+            "speciality": "Emergency Medicine",
+            "image":"d7.jpg"
+        }
+    ]
+}

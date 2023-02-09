@@ -38,7 +38,7 @@
              <a href="index.html" class="logo"><span>My</span>Care.org</a>
 
              <ul class="menu">
-                 <li><a href="#our-team">Find A Doctor</a></li>
+                 <li><a href="doctors.html">Find A Doctor</a></li>
                  <li><a href="#our-services">Our Services</a></li>
                  <li><a href="#testimonials">Testimonials</a></li>
                  <li><a href="#why-choose-us">More About Us</a></li>
@@ -372,6 +372,7 @@
                          </div>
                      </div>
                  </div>
+                             
              </div>
              <div class="swiper-pagination"></div>
              </div>
@@ -391,24 +392,24 @@
           <form accept="" role="form" class="bookForm">
             <div class="row">
               <div class="col-md-4 form-group">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" >
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required >
               </div>
               <div class="col-md-4 form-group mt-3 mt-md-0">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" >
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required >
                
               </div>
               <div class="col-md-4 form-group mt-3 mt-md-0">
-                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" >
+                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Your Phone" required >
                 
               </div>
             </div>
             <div class="row">
               <div class="col-md-4 form-group mt-3">
-                <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" >
+                <input type="datetime" name="date" class="form-control datepicker" id="date" placeholder="Appointment Date" required >
                 
               </div>
               <div class="col-md-4 form-group mt-3">
-                <select name="age" id="age" class="form-select">
+                <select name="age" id="age" class="form-select" required>
                   <option value="">Select Age</option>
                   <option value="Department 1">Below 18</option>
                   <option value="Department 2">18-40</option>
@@ -417,7 +418,7 @@
                 
               </div>
               <div class="col-md-4 form-group mt-3">
-                <select name="doctor" id="doctor" class="form-select">
+                <select name="doctor" id="doctor" class="form-select" required>
                   <option value="">Select Doctor</option>
                   <option value="Doctor 1">Dr. Sudeep Singh Sachdev</option>
                   <option value="Doctor 2">Dr. Satish Kaul</option>
